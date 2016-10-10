@@ -1,0 +1,43 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Upload spreadsheet - Family Mediator API
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/admin">Home</a></li>
+      <li><a href="/admin/actions">Actions</a></li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge">
+    {% if serviceName %} {{ serviceName }} {% endif %}
+  </h1>
+
+  <form action="/admin/upload" method="post" class="form">
+
+    <h1 class="form-title heading-large">
+      Family Mediators data upload
+    </h1>
+
+    <!-- Full name -->
+    <div class="form-group">
+      <label class="form-label-bold" for="file-name">Excel file</label>
+      <p class="form-hint">Navigate to the .xslx file on your file system</p>
+      <input type="file" class="form-control" id="file-name">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" class="button" value="Continue">
+    </div>
+
+  </form>
+    
+</main>
+
+{% endblock %}

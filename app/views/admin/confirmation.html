@@ -1,0 +1,32 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Spreadsheet processed - Family Mediator API
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="bold-large">Spreadsheet upload complete</h1>
+        <p>
+          Your reference number is <br>
+          <strong class="heading-medium">HDJ2123F</strong>
+        </p>
+      </div>
+      <p>We have processed the spreadsheet data and updated the data served by the mediators API.</p>
+
+      <h2 class="heading-medium">What happens next</h2>
+      <p>Any service using the Family Mediators API will be accessing the latest data uploaded by you.</p>
+      <p>When you need to make another update, please start the <a href="/admin/upload">update process</a> again.</p>
+
+    </div>
+  </div>
+    
+</main>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Family Mediator API: Data update service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-xlarge">
+    {% if serviceName %} {{ serviceName }} {% endif %}
+  </h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <p>Use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>update data served by Family Mediators API</li>
+        <li>see when the Family Mediators API was last updated</li>
+        <li>view basic usage analytics of Family Mediators API</li>
+      </uL>
+
+      <p>
+        <a class="button button-start" href="admin/actions.html" role="button">Start now</a>
+      </p>
+
+    </div>
+    
+
+</main>
+
+{% endblock %}

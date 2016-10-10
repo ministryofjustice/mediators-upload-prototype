@@ -1,0 +1,60 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  Check uploaded file - - Family Mediator API
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <h1 class="heading-large">
+    Check file details before processing the excel file
+  </h1>
+
+  <table class="check-your-answers">
+
+    <thead>
+      <tr>
+        <th colspan="2">
+          <h2 class="heading-medium">
+            File uploaded
+          </h2>
+        </th>
+        <th>
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          Mediators register.xslx
+        </td>
+        <td>
+          Filesize: 87Kb<br>
+          Last modified date: 27/10/2016<br>
+          Row count: 2024
+          
+        </td>
+        <td class="change-answer">
+          <a href="#">
+            Change <span class="visuallyhidden">spreadsheet</span>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h2 class="heading-medium">Now process your spreadsheet</h2>
+  <p>By submitting this spreadsheet for processing, you acknowledge updates to the live data will be be made immediately.</p>
+
+  <p>
+    <a class="button" href="confirmation.html" role="button">Process data and apply updates</a>
+  </p>  
+
+
+</main>
+
+{% endblock %}
